@@ -46,14 +46,24 @@ button.click(function(event){
 
    if (event.target.classList.contains('eql')){
       if ( a!='' && b!=''){
-         let ab;
+        
+         
          if(znak === '+'){
-            ab = Number(a) + Number(b);
+            let ab = Number(a) + Number(b);
             $('.type-field').text(ab)
+           
 
          }
-         if(znak == "*"){
-            ab = Number(a) * Number(b);
+         if(znak === "*"){
+            let ab = Number(a) * Number(b);
+            $('.type-field').text(ab)
+         }
+         if(znak === "/"){
+            let ab = Number(a) / Number(b);
+            $('.type-field').text(ab)
+         }
+         if(znak === "-"){
+            let ab = Number(a) - Number(b);
             $('.type-field').text(ab)
          }
 
