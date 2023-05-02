@@ -1,0 +1,70 @@
+* {
+   font-family: 'Roboto Condensed', sans-serif;
+}
+.display {
+   margin: 0 auto;
+   width: 500px;
+   height: 900px;
+   background-color: black;
+   padding: 20px;
+   border-radius: 40px;
+}
+.top-disp {
+   color: white;
+
+   position: relative;
+   height: 280px;
+}
+.top-disp p {
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   font-size: 80px;
+   margin: 10px;
+}
+.panel {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   gap: 10px;
+   
+}
+.but {
+   border-radius: 999px;
+   background-color: gray;
+   width: 100px;
+   height: 100px;
+   margin: 0 auto;
+   transition: background-color 0.2s;
+   text-align: center;
+   cursor: pointer;
+   line-height: 100px;
+   font-size: 30px;
+   font-weight: 900;
+}
+.but:active {
+   background-color: rgb(255, 255, 255);
+}
+.but:hover{
+   transform: scale(0.95);
+}
+
+.zero {
+   grid-column-start: 1;
+   grid-column-end: 3;
+   width: 230px;
+   border-radius: 45px;
+   height: 90%;
+   
+}
+.gr {
+   background-color: whitesmoke;
+   color: black;
+}
+.gr:active {
+   background-color: rgb(105, 102, 102);
+   color: white;
+}
+.or{
+   background-color: orange;
+   color:white;
+}
